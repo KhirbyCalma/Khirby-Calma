@@ -55,6 +55,7 @@ header {
     text-align: center;
     text-decoration: none;
     border-radius: 50px;;
+    font-family: inherit;
 }
 
 .about-photo {
