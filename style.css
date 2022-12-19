@@ -35,8 +35,9 @@ header nav a {
 .about-me {
     display: flex;
     justify-content: space-between;
-    gap: 75px;
+    align-items: flex-end;
     background-color: black;
+    gap: 75px;
 }
 
 .about-left {
@@ -45,7 +46,6 @@ header nav a {
 
 .about-left h1 {
     font-size: 3rem;
-    font-weight: bolder;
 }
 
 .about-left p {
@@ -62,7 +62,12 @@ header nav a {
     border-radius: 1rem;
 }
 
-.about-right.about-photo{
-    height: 224.91px;
-    width: 500px;
+.about-right {
+    display: flex;
+    align-items: flex-end;
+}
+
+.about-photo{
+    height: auto;
+    width: 100%;
 }
