@@ -66,12 +66,22 @@ header nav a {
 
 .projects {
     text-align: center;
+    padding: 25px 250px;
+}
+
+.projects h1 {
+    font-size: 3rem;
+    margin: 0;
 }
 
 .projects ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.projects figcaption {
+    font-size: 1.125rem;
 }
 
 .skills {
