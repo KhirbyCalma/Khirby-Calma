@@ -73,3 +73,29 @@ header nav a {
     margin: 0;
     padding: 0;
 }
+
+.skills {
+    text-align: center;
+    background-color: #F7BA00;
+    padding: 25px 250px;
+}
+
+.skills h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+}
+
+.skill-logo {
+    height: 128px;
+    width: auto;
+}
