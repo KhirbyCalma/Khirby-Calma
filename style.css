@@ -103,6 +103,7 @@ header nav a {
     display: flex;
     gap: 75px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skill-logo {
