@@ -4,16 +4,13 @@ body {
     line-height: 2;
 }
 
-header, .about-me {
-    padding: 25px 250px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 75px;
     background-color: black;
+    padding: 25px 250px;
 }
 
 header .header-logo {
@@ -33,41 +30,36 @@ header nav a {
 }
 
 .about-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     background-color: black;
-    gap: 75px;
+    background-image: url("./images/KhirbyCalmaAboutMe.jpg");
+    background-size: cover;
+    background-position: center top;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 25px;
 }
 
-.about-left {
+.about-me {
     color: white;
 }
 
-.about-left h1 {
+.about-me h1 {
     font-size: 3rem;
+    margin: 0;
 }
 
-.about-left p {
+.about-me p {
     font-size: 1.125rem;
-    width: 60ch;
+    width: 45ch;
 }
 
-.about-left button {
+.about-me button {
     background-color: #F7BA00;
     color: white;
     font-size: 1.125rem;
+    font-family: inherit;
     font-weight: bold;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
-.about-right {
-    display: flex;
-    align-items: flex-end;
-}
-
-.about-photo{
-    height: auto;
-    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    border-color: #F7BA00;
 }
