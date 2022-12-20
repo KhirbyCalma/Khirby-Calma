@@ -141,3 +141,10 @@ header nav a {
     height: 128px;
     width: auto;
 }
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 25px 250px;
+    padding: 0;
+}
