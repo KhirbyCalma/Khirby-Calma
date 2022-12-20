@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -29,7 +33,7 @@ header nav a {
     font-size: 1.125rem;
 }
 
-.about-me {
+#about-me {
     background-color: black;
     background-image: url("./images/KhirbyCalmaAboutMe.jpg");
     background-size: cover;
@@ -39,21 +43,21 @@ header nav a {
     padding-bottom: 25px;
 }
 
-.about-me {
+#about-me {
     color: white;
 }
 
-.about-me h1 {
+#about-me h1 {
     font-size: 3rem;
     margin: 0;
 }
 
-.about-me p {
+#about-me p {
     font-size: 1.125rem;
     width: 45ch;
 }
 
-.about-me button {
+#about-me button {
     background-color: #F7BA00;
     color: white;
     font-size: 1.125rem;
@@ -64,39 +68,39 @@ header nav a {
     border-color: #F7BA00;
 }
 
-.projects {
+#projects {
     text-align: center;
     padding: 25px 250px;
 }
 
-.projects h1 {
+#projects h1 {
     font-size: 3rem;
     margin: 0;
 }
 
-.projects ul {
+#projects ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.projects figcaption {
+#projects figcaption {
     font-size: 1.125rem;
 }
 
-.skills {
+#skills {
     text-align: center;
     background-color: #F7BA00;
     padding: 25px 250px;
 }
 
-.skills h1 {
+#skills h1 {
     color: white;
     font-size: 3rem;
     margin: 0;
 }
 
-.skills ul {
+#skills ul {
     list-style: none;
     margin: 0;
     padding: 0;
