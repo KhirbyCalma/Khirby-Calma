@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9rem;
+    background-color: black;
+    padding: 2rem 10rem;
+}
+
+header .logo {
+    height: 75px;
+    width: 75px;
+}
+
+header nav {
+    display: flex;
+    gap: 3rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ABOUT ME */
+#about-me {
+    background-color: #F7BA00;
+    background-image: url("../images/KhirbyCalmaAboutMe.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 2rem 10rem;
+}
+
+#about-me .description {
+    /* Credit to: https://getcssscan.com/css-box-shadow-examples for box shadow */
+    color: white;
+    padding: 1.5rem;
+    background: rgba(247, 186, 0, 0.75);
+    max-width: 40ch;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#about-me .description h1 {
+    /* Credit to: https://css-tricks.com/almanac/properties/t/text-shadow/ for text shadow */
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+}
+
+#about-me .description p {
+    /* Credit to: https://www.codesdope.com/blog/article/25-creative-css3-text-shadow-effects-you-cant-miss/ for text shadow */
+    font-size: 1.5rem;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), 
+	  -3px 0px 7px rgba(81,67,21,0.8), 
+	  0px 4px 7px rgba(81,67,21,0.8);
+}
+
+#about-me .description .contact {
+    /* Credit to: https://getcssscan.com/css-buttons-examples for button style */
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+#about-me .description .contact:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+#about-me .description .contact:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+#about-me .description .contact:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+#projects {
+    text-align: center;
+    padding: 25px 250px;
+}
+
+#projects h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#projects ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#projects figcaption {
+    font-size: 1.125rem;
+}
+
+#skills {
+    text-align: center;
+    background-color: #F7BA00;
+    padding: 25px 250px;
+}
+
+#skills h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-logo {
+    height: 128px;
+    width: auto;
+}
+
+#contact {
+    background-color: black;
+    text-align: center;
+    padding: 25px 250px;
+}
+
+#contact h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-logo {
+    height: 128px;
+    width: auto;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 25px 250px;
+    padding: 0;
+}
