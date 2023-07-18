@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 
-header, #about-me, #projects, #skills, #contact {
+header, #about-me, #projects, #skills, #contact, footer {
     padding: 2rem 10rem;
 }
 
@@ -282,7 +282,6 @@ header nav a {
 
 footer {
     text-align: center;
-    font-size: 1rem;
-    padding: 25px 250px;
-    padding: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
