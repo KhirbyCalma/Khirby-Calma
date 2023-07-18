@@ -11,6 +11,10 @@ body {
     flex-direction: column;
 }
 
+header, #about-me, #projects {
+    padding: 2rem 10rem;
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -18,7 +22,6 @@ header {
     align-items: center;
     gap: 9rem;
     background-color: black;
-    padding: 2rem 10rem;
 }
 
 header .logo {
@@ -45,7 +48,6 @@ header nav a {
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
-    padding: 2rem 10rem;
 }
 
 #about-me .description {
@@ -132,24 +134,68 @@ header nav a {
     transform: translateY(2px);
 }
 
+/* PROJECTS */
 #projects {
-    text-align: center;
-    padding: 25px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
 
 #projects h1 {
+    /* Credit to: https://css-tricks.com/almanac/properties/t/text-shadow/ for text shadow */
     font-size: 3rem;
-    margin: 0;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
 }
 
-#projects ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#projects .project-card {
+    /* Credit to: https://getcssscan.com/css-box-shadow-examples for border style */
+    max-width: 40ch;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
 }
 
-#projects figcaption {
-    font-size: 1.125rem;
+.project-card a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card .description {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.project-card .description h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.project-card .description p {
+    font-size: 1.5rem;
 }
 
 #skills {
