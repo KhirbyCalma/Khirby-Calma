@@ -1,7 +1,37 @@
+html {
+    font-family: "Roboto", sans-serif;
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 24px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+header .logo h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+header nav ol {
+    display: flex;
+    gap: 24px;
+    font-size: large;
 }
 
 main {
