@@ -112,3 +112,11 @@ main section.about-me .hero-textbox button:active {
     padding: 0.25em 0.75em;
   }
 }
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
