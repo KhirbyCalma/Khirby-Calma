@@ -1,4 +1,5 @@
 html {
+    line-height: 10px;
     font-family: "Roboto", sans-serif;
 }
 
@@ -40,4 +41,35 @@ header nav ol {
 
 main {
     flex: 1;
+}
+
+main section.about-me.hero-img {
+    background-color: black;
+    background-image: url("./hero.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 96px;
+}
+
+main section.about-me .hero-textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 32ch;
+    color: white;
+    background-color: rgb(255, 215, 0);
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 24px;
+}
+
+main section.about-me .hero-textbox h2 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+main section.about-me .hero-textbox ul {
+    list-style-type: disc;
+    list-style-position: inside; 
 }
