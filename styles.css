@@ -14,6 +14,7 @@ header {
     align-items: center;
     background-color: black;
     color: white;
+    gap: 24px;
     padding: 24px;
 }
 
@@ -24,6 +25,7 @@ header .logo {
 }
 
 header .logo h1 {
+    text-align: center;
     font-size: xx-large;
     font-weight: bolder;
 }
@@ -32,6 +34,8 @@ header nav ol {
     display: flex;
     gap: 24px;
     font-size: large;
+    text-align: center;
+    align-items: center;
 }
 
 main {
