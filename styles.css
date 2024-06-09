@@ -1,3 +1,4 @@
+/* GLOBAL */
 html {
     line-height: 10px;
     font-family: "Roboto", sans-serif;
@@ -9,6 +10,7 @@ body {
     flex-direction: column;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -39,10 +41,12 @@ header nav ol {
     align-items: center;
 }
 
+/* MAIN CONTENT */
 main {
     flex: 1;
 }
 
+/* ABOUT ME (HERO) */
 main section.about-me.hero-img {
     background-color: black;
     background-image: url("./hero.jpg");
