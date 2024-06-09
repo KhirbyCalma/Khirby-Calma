@@ -69,7 +69,12 @@ main section.about-me .hero-textbox h2 {
     font-weight: bold;
 }
 
+main section.about-me .hero-textbox p {
+    font-size: large;
+}
+
 main section.about-me .hero-textbox ul {
+    font-size: large;
     list-style-type: disc;
     list-style-position: inside; 
 }
