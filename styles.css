@@ -113,6 +113,38 @@ main section.about-me .hero-textbox button:active {
   }
 }
 
+/* PROJECTS */ 
+section.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+}
+
+section.projects .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+section.projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
+}
+
+section.projects .project .description {
+    max-width: 32.5ch;
+    text-align: center;
+}
+
 /* SKILLS */
 main section.skills,
 main section.skills .web-dev, 
