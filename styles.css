@@ -146,45 +146,35 @@ section.projects .project .description {
 }
 
 /* SKILLS */
-main section.skills,
-main section.skills .web-dev, 
-main section.skills .mobile-dev, 
-main section.skills .software-dev-tools {
+section.skills {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-main section.skills {
     padding: 24px;
     gap: 24px;
-}
+    background-color: lightgrey;
+} 
 
-main section.skills .web-dev, 
-main section.skills .mobile-dev, 
-main section.skills .software-dev-tools {
-    gap: 12px;
-}
-
-main section.skills h2 {
-    font-size: x-large;
-    font-weight: bold;
-}
-
-main section.skills .web-dev h3, 
-main section.skills .mobile-dev h3, 
-main section.skills .software-dev-tools h3 {
-    font-size: large;
-}
-
-main section.skills .web-dev .icons,
-main section.skills .mobile-dev .icons, 
-main section.skills .software-dev-tools .icons {
+section.skills .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+} 
+
+section.skills .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 12px;
-}
+} 
+
+section.skills .skill .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+} 
 
 /* FOOTER */
 footer {
