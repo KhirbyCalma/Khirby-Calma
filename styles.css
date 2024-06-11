@@ -179,6 +179,34 @@ section.skills .skill .icons {
     gap: 12px;
 } 
 
+/* CONTACT ME */
+section.contact-me {
+    padding: 24px;
+}
+
+section.contact-me .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: rgb(255, 215, 0);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+section.contact-me .container h2 {
+    color: white;
+}
+
+section.contact-me .icon-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 /* FOOTER */
 footer {
     background-color: black;
