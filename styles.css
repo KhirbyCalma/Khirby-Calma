@@ -1,6 +1,5 @@
 /* GLOBAL */
-html {
-    line-height: 10px;
+html * {
     font-family: "Roboto", sans-serif;
 }
 
@@ -10,27 +9,46 @@ body {
     flex-direction: column;
 }
 
+header, 
+section.about-me, 
+section.projects,
+section.skills,
+section.contact-me,
+footer {
+    padding: 24px 256px;
+}
+
+header .logo h1,
+section.about-me .hero-textbox h1,
+section.projects h1,
+section.skills h1,
+section.contact-me h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+section.projects .project .description h2,
+section.skills .skill h2 {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
 /* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #0A0A0A;
     color: white;
     gap: 24px;
-    padding: 24px;
 }
 
 header .logo {
     display: flex;
     align-items: center;
     gap: 24px;
-}
-
-header .logo h1 {
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bolder;
 }
 
 header nav ol {
@@ -47,45 +65,39 @@ main {
 }
 
 /* ABOUT ME (HERO) */
-main section.about-me.hero-img {
+section.about-me.hero-img {
     background-color: black;
     background-image: url("./images/hero.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
-    padding: 96px;
 }
 
-main section.about-me .hero-textbox {
+section.about-me .hero-textbox {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 32ch;
+    max-width: 32ch;
     color: white;
-    background-color: rgb(255, 215, 0);
+    background-color: #FFDF00;
     padding: 24px;
+    /* CREDIT TO: https://getcssscan.com/css-box-shadow-examples (#89) */
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 12px;
 }
 
-main section.about-me .hero-textbox h2 {
-    font-size: x-large;
-    font-weight: bold;
-}
-
-main section.about-me .hero-textbox p {
+section.about-me .hero-textbox p {
     font-size: large;
 }
 
-main section.about-me .hero-textbox ul {
+section.about-me .hero-textbox ul {
     font-size: large;
     list-style-type: disc;
     list-style-position: inside; 
 }
 
 /* CREDIT TO: https://getcssscan.com/css-buttons-examples */
-main section.about-me .hero-textbox button {
-  font-family: "Open Sans", sans-serif;
+section.about-me .hero-textbox button {
   font-size: 16px;
   letter-spacing: 2px;
   text-decoration: none;
@@ -101,14 +113,14 @@ main section.about-me .hero-textbox button {
   touch-action: manipulation;
 }
 
-main section.about-me .hero-textbox button:active {
+section.about-me .hero-textbox button:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
 }
 
 @media (min-width: 768px) {
-  main section.about-me .hero-textbox button {
+  section.about-me .hero-textbox button {
     padding: 0.25em 0.75em;
   }
 }
@@ -119,13 +131,11 @@ section.projects {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    padding: 24px;
 }
 
 section.projects .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 24px;
 }
@@ -140,12 +150,18 @@ section.projects .project {
 section.projects .project img {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 12px;
-    padding: 12px;
 }
 
 section.projects .project .description {
-    max-width: 32.5ch;
+    max-width: 32ch;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+section.projects .project .description p {
     text-align: center;
+    font-size: large;
 }
 
 /* SKILLS */
@@ -153,7 +169,6 @@ section.skills {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px;
     gap: 24px;
     background-color: lightgrey;
 } 
@@ -180,23 +195,19 @@ section.skills .skill .icons {
 } 
 
 /* CONTACT ME */
-section.contact-me {
-    padding: 24px;
+section.contact-me h1 {
+    color: white;
 }
 
 section.contact-me .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    background-color: rgb(255, 215, 0);
+    gap: 24px;
+    background-color: #FFDF00;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 12px;
     padding: 24px;
-}
-
-section.contact-me .container h2 {
-    color: white;
 }
 
 section.contact-me .icon-links {
@@ -207,10 +218,14 @@ section.contact-me .icon-links {
     gap: 12px;
 }
 
+section.contact-me .icon-links .icon{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
+}
+
 /* FOOTER */
 footer {
     background-color: black;
     color: white;
-    padding: 12px;
     text-align: center;
 }
