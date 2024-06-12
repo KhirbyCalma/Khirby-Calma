@@ -1,4 +1,8 @@
 /* GLOBAL */
+html {
+    scroll-behavior: smooth;
+}
+
 html * {
     font-family: "Roboto", sans-serif;
 }
@@ -10,26 +14,26 @@ body {
 }
 
 header, 
-section.about-me, 
-section.projects,
-section.skills,
-section.contact-me,
+section#about-me, 
+section#projects,
+section#skills,
+section#contact-me,
 footer {
     padding: 24px 256px;
 }
 
 header .logo h1,
-section.about-me .hero-textbox h1,
-section.projects h1,
-section.skills h1,
-section.contact-me h1 {
+section#about-me .hero-textbox h1,
+section#projects h1,
+section#skills h1,
+section#contact-me h1 {
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
 }
 
-section.projects .project .description h2,
-section.skills .skill h2 {
+section#projects .project .description h2,
+section#skills .skill h2 {
     text-align: center;
     font-size: x-large;
     font-weight: bold;
@@ -59,13 +63,18 @@ header nav ol {
     align-items: center;
 }
 
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
 /* MAIN CONTENT */
 main {
     flex: 1;
 }
 
 /* ABOUT ME (HERO) */
-section.about-me.hero-img {
+section#about-me.hero-img {
     background-color: black;
     background-image: url("./images/hero.jpg");
     background-position: center; 
@@ -73,7 +82,7 @@ section.about-me.hero-img {
     background-size: cover;
 }
 
-section.about-me .hero-textbox {
+section#about-me .hero-textbox {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -86,18 +95,18 @@ section.about-me .hero-textbox {
     border-radius: 12px;
 }
 
-section.about-me .hero-textbox p {
+section#about-me .hero-textbox p {
     font-size: large;
 }
 
-section.about-me .hero-textbox ul {
+section#about-me .hero-textbox ul {
     font-size: large;
     list-style-type: disc;
     list-style-position: inside; 
 }
 
 /* CREDIT TO: https://getcssscan.com/css-buttons-examples */
-section.about-me .hero-textbox button {
+section#about-me .hero-textbox button {
   font-size: 16px;
   letter-spacing: 2px;
   text-decoration: none;
@@ -113,59 +122,59 @@ section.about-me .hero-textbox button {
   touch-action: manipulation;
 }
 
-section.about-me .hero-textbox button:active {
+section#about-me .hero-textbox button:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
 }
 
 @media (min-width: 768px) {
-  section.about-me .hero-textbox button {
+  section#about-me .hero-textbox button {
     padding: 0.25em 0.75em;
   }
 }
 
 /* PROJECTS */ 
-section.projects {
+section#projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
 }
 
-section.projects .container {
+section#projects .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
 }
 
-section.projects .project {
+section#projects .project {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 }
 
-section.projects .project img {
+section#projects .project img {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 12px;
 }
 
-section.projects .project .description {
+section#projects .project .description {
     max-width: 32ch;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-section.projects .project .description p {
+section#projects .project .description p {
     text-align: center;
     font-size: large;
 }
 
 /* SKILLS */
-section.skills {
+section#skills {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,20 +182,20 @@ section.skills {
     background-color: lightgrey;
 } 
 
-section.skills .container {
+section#skills .container {
     display: flex;
     flex-direction: column;
     gap: 24px;
 } 
 
-section.skills .skill {
+section#skills .skill {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 } 
 
-section.skills .skill .icons {
+section#skills .skill .icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,11 +204,11 @@ section.skills .skill .icons {
 } 
 
 /* CONTACT ME */
-section.contact-me h1 {
+section#contact-me h1 {
     color: white;
 }
 
-section.contact-me .container {
+section#contact-me .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +219,7 @@ section.contact-me .container {
     padding: 24px;
 }
 
-section.contact-me .icon-links {
+section#contact-me .icon-links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +227,7 @@ section.contact-me .icon-links {
     gap: 12px;
 }
 
-section.contact-me .icon-links .icon{
+section#contact-me .icon-links .icon{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 12px;
 }
